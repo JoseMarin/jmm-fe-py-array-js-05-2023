@@ -6,18 +6,6 @@ sus elementos y vacíe los arrays originales. Por ejemplo, con los arrays arrayU
 let arrayUno = [1, 2, 3];
 let arrayDos = [4, 5, 6];
 
-//pasar por valor
-let A = 10; 
-let B = 12;
-
-//pasar por referencia
-arrayUno = arrayDos;
-
-//clono valores con rest o spred ...
-let arrayTres = [...arrayDos];
-
-arrayUno[1] = 10;
-
 let resultado = [];
 
 // relleno el nuevo array
