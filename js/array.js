@@ -22,6 +22,8 @@ console.log(fruta);
 
 console.log(fruta.reverse());
 
+// pasar de string a array
 let dias = "lunes,martes,miercoles,jueves,viernes";
 let newArray = dias.split(',');
 console.log(newArray);
+
