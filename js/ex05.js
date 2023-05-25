@@ -6,6 +6,17 @@ sus elementos y vacíe los arrays originales. Por ejemplo, con los arrays arrayU
 let arrayUno = [1, 2, 3];
 let arrayDos = [4, 5, 6];
 
+let A = 10; 
+let B = 12;
+
+//pasasr por referencia
+arrayUno = arrayDos;
+
+//clono valores con rrest o spred ...
+let arrayTres = [...arrayDos];
+
+arrayUno[1] = 10;
+
 let resultado = [];
 
 // relleno el nuevo array
@@ -13,6 +24,8 @@ for (let i = 0; i < arrayUno.length; i++) {
     resultado.push(arrayUno[i]);
     resultado.push(arrayDos[i]);
 }
+
+let grupo = arrayUno.concat(arrayDos);
 
 //limpio los arrays originales
 arrayUno = [];
@@ -22,3 +35,4 @@ arrayDos = [];
 console.log(arrayUno);
 console.log(arrayDos);
 console.log(resultado.toString());
+
